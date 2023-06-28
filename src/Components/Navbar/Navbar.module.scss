@@ -5,4 +5,154 @@
   flex-direction: column;
   width: 100%;
   z-index: 1000;
+
+  .Navbar_container_dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 pixRem(120);
+    height: pixRem(80);
+    background-color: $darkModeBackground;
+
+    @include md() {
+      padding: 0 pixRem(72);
+      height: pixRem(68);
+    }
+    @include sm() {
+      padding: 0 pixRem(18);
+      height: pixRem(72);
+    }
+  }
+
+  .Navbar_container_light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 pixRem(120);
+    height: pixRem(80);
+    background-color: $lightModeBackground;
+
+    @include md() {
+      padding: 0 pixRem(72);
+      height: pixRem(76);
+    }
+    @include sm() {
+      padding: 0 pixRem(18);
+      height: pixRem(72);
+    }
+  }
+
+  .desktop_right {
+    display: flex;
+    align-items: center;
+    gap: pixRem(42);
+
+    @include md() {
+      gap: pixRem(32);
+    }
+    @include sm() {
+      gap: pixRem(16);
+    }
+
+    .navLinks_Desktop {
+      display: flex;
+      align-items: center;
+      gap: pixRem(42);
+
+      @include md() {
+        gap: pixRem(32);
+      }
+      @include sm() {
+        display: none;
+      }
+
+      .single_NavLink {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        transition: all ease 0.2s;
+        text-decoration: none;
+        border-bottom: transparent solid 2px;
+      }
+
+      .single_NavLink:hover {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+        color: $tertiary;
+        border-bottom: $tertiary solid 2px;
+      }
+    }
+
+    .theme_icon {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .hamburger {
+      display: none;
+      border: none;
+      background: none;
+
+      @include sm() {
+        display: block;
+      }
+    }
+  }
+
+  .Navlinks_Mobile {
+    display: flex;
+    flex-direction: column;
+    gap: pixRem(28);
+
+    .mobile_NavLink {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 4px;
+      transition: all ease 0.2s;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  .Mobile_Nav_Dark,
+  .Mobile_Nav_Light {
+    display: none;
+    @include md() {
+      display: none;
+    }
+    @include sm() {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      width: 100%;
+      height: calc(100vh - 80px);
+
+      transition: all ease 0.2s;
+
+      animation-name: slideDown;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  //to set background color based on darkMode
+  .Mobile_Nav_Dark {
+    @include sm() {
+      background-color: $darkModeBackground;
+    }
+  }
+  //to set background color based on lightMode
+  .Mobile_Nav_Light {
+    @include sm() {
+      background-color: $lightModeBackground;
+    }
+  }
 }
