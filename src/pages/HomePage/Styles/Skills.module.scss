@@ -1,0 +1,194 @@
+@use "../../../assets/styles/" as *;
+
+.Skills {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 020vw;
+
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  @include sm() {
+    padding: 0 pixRem(18);
+    flex-direction: column;
+    row-gap: pixRem(100);
+  }
+
+  .skills_container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    row-gap: pixRem(60);
+    @include sm() {
+      width: 100%;
+      row-gap: pixRem(40);
+    }
+
+    .all_skills_container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: pixRem(22);
+      @include sm() {
+        row-gap: pixRem(18);
+      }
+    }
+  }
+
+  .experience_container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    row-gap: pixRem(60);
+    @include sm() {
+      width: 100%;
+      row-gap: pixRem(40);
+    }
+
+    .all_experience_container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: pixRem(64);
+      @include sm() {
+        row-gap: pixRem(36);
+      }
+    }
+  }
+}
+
+.SingleSkill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  width: 100%;
+  position: relative;
+
+  .SingleSkill_title_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 8px;
+    width: 100%;
+
+    .image_container {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      width: auto;
+
+      img {
+        height: 18px;
+        width: auto;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .full_div {
+    width: 100%;
+    background-color: #e4e4e4;
+    height: 18px;
+    border-radius: 12px;
+  }
+
+  .percentage_div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 24px;
+    background-color: $extended;
+    height: 18px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 2;
+
+    p {
+      font-size: 12px;
+      color: #fbfbfb;
+    }
+  }
+}
+
+.SingleExperience {
+  display: flex;
+  column-gap: 28px;
+  width: 100%;
+  @include sm() {
+    column-gap: 20px;
+  }
+
+  .single_experience_left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 4px;
+    width: 20%;
+
+    p {
+      color: $lightModeFontPrimary;
+      font-size: 14px;
+      line-height: 20px;
+      @include sm() {
+        font-size: 10px;
+        line-height: 16px;
+      }
+    }
+
+    .arrow_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      column-gap: 0;
+
+      .horizontal_line {
+        width: 100%;
+        height: 1px;
+        background-color: $lightModeFontSecondary;
+      }
+
+      img {
+        width: 16%;
+        height: auto;
+      }
+    }
+
+    h6 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: end;
+    }
+  }
+
+  .single_experience_right {
+    width: 80%;
+    padding: 18px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: $extended;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $lightModeFontPrimary;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
