@@ -1,11 +1,11 @@
 import styles from "./PublicPageLayout.module.scss";
-import Navbar from "../../Components/Navbar";
+import { Navbar, Footer } from "../../Components";
 import { Outlet, useLocation } from "react-router-dom";
 import useApp from "../../hooks/useApp";
 import { useEffect } from "react";
 
 const PublicPageLayout = () => {
-  const { darkMode, setMobileNavbarOpen } = useApp();
+  const { setMobileNavbarOpen } = useApp();
   const location = useLocation();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const PublicPageLayout = () => {
 
   return (
     <>
-      <div className={darkMode ? styles.Dark : styles.Light}>
+      <div className={styles.Light}>
         <div className={styles.PublicPageLayout}>
           <div className={styles.main_container}>
             <div className={styles.Navbar_container}>
@@ -33,6 +33,7 @@ const PublicPageLayout = () => {
                 <Outlet />
               </div>
             </div>
+            <Footer />
           </div>
         </div>
       </div>

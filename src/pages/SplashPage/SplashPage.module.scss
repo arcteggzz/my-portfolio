@@ -6,4 +6,29 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+
+  img {
+    width: 160px;
+    height: auto;
+
+    animation-name: load_in_out;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes load_in_out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

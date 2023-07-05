@@ -7,8 +7,8 @@ type AppContextProviderProps = {
 type AppContextType = {
   mobileNavbarOpen: boolean;
   setMobileNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  toggleTheme: () => void;
-  darkMode: boolean;
+  // toggleTheme: () => void;
+  // darkMode: boolean;
   toggleMobileNavbar: () => void;
 };
 
@@ -19,36 +19,31 @@ export const AppContextProvider = ({ children }: AppContextProviderProps) => {
   // const [darkMode, setDarkMode] = useState(
   //   window.matchMedia(`(prefers-color-scheme: dark)`).matches
   // );
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
-  const toggleTheme = () => {
-    darkMode
-      ? document.documentElement.style.setProperty(
-          "--scrollbar-track-color",
-          "#e7e7e7"
-        )
-      : document.documentElement.style.setProperty(
-          "--scrollbar-track-color",
-          "#02142d"
-        );
+  // const toggleTheme = () => {
+  //   darkMode
+  //     ? document.documentElement.style.setProperty(
+  //         "--scrollbar-track-color",
+  //         "#e7e7e7"
+  //       )
+  //     : document.documentElement.style.setProperty(
+  //         "--scrollbar-track-color",
+  //         "#02142d"
+  //       );
 
-    setDarkMode((darkMode) => !darkMode);
-  };
+  //   setDarkMode((darkMode) => !darkMode);
+  // };
 
   const toggleMobileNavbar = () => {
     setMobileNavbarOpen((mobileNavbarOpen) => !mobileNavbarOpen);
   };
 
   useEffect(() => {
-    darkMode
-      ? document.documentElement.style.setProperty(
-          "--scrollbar-track-color",
-          "#02142d"
-        )
-      : document.documentElement.style.setProperty(
-          "--scrollbar-track-color",
-          "#e7e7e7"
-        );
+    document.documentElement.style.setProperty(
+      "--scrollbar-track-color",
+      "#e7e7e7"
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -57,8 +52,8 @@ export const AppContextProvider = ({ children }: AppContextProviderProps) => {
       value={{
         mobileNavbarOpen,
         setMobileNavbarOpen,
-        toggleTheme,
-        darkMode,
+        // toggleTheme,
+        // darkMode,
         toggleMobileNavbar,
       }}
     >

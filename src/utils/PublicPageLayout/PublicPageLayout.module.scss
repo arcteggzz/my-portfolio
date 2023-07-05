@@ -85,7 +85,7 @@
 
     .Outlet_container {
       //this matches the height of the navbar and required to make it fixed
-      margin-top: pixRem(80);
+      // margin-top: pixRem(80);
       width: 100%;
       display: flex;
       justify-content: center;
@@ -93,11 +93,11 @@
       // border: 1px yellow solid;
 
       @include md() {
-        margin-top: pixRem(68);
+        // margin-top: pixRem(68);
         overflow: hidden;
       }
       @include sm() {
-        margin-top: pixRem(72);
+        // margin-top: pixRem(72);
         overflow: hidden;
       }
 

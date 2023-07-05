@@ -5,11 +5,13 @@ import { AnimatePresence } from "framer-motion";
 import { AppContextProvider } from "./context/AppContext";
 
 //layouts
-import PublicPageLayout from "./utils/PublicPageLayout";
+import { PublicPageLayout } from "./utils/";
 
 //pages
-import SplashPage from "./pages/SplashPage/";
-import HomePage from "./pages/HomePage/";
+import { SplashPage, HomePage } from "./pages";
+
+//routes
+import { routePaths } from "./utils/";
 
 const App = () => {
   const location = useLocation();
@@ -19,10 +21,11 @@ const App = () => {
       <AppContextProvider>
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<SplashPage />} />
+            <Route path={routePaths.SPLASHPAGE} element={<SplashPage />} />
 
             <Route element={<PublicPageLayout />}>
-              <Route path="/home" element={<HomePage />} />
+              <Route path={routePaths.HOMEPAGE} element={<HomePage />} />
+              {/* <Route path={`/project/:id`} element={<ProjectDetailsPage />} /> */}
             </Route>
           </Routes>
         </AnimatePresence>

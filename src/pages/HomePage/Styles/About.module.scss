@@ -2,9 +2,75 @@
 
 .About {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
   align-items: center;
+  padding: 20vh 20vw;
+  row-gap: pixRem(72);
 
-  height: 75vh;
+  @include md() {
+    padding: 0 pixRem(72);
+  }
+  @include sm() {
+    padding: 10vh pixRem(20);
+    row-gap: pixRem(60);
+  }
+
+  .about_header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: pixRem(18);
+
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: $extended;
+      @include sm() {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    h2 {
+      @include sm() {
+        font-size: 26px !important;
+        line-height: 28px !important;
+      }
+    }
+  }
+
+  .about_body {
+    display: flex;
+    width: 100%;
+    column-gap: 48px;
+    @include sm() {
+      flex-direction: column;
+      row-gap: 28px;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+      color: $extended;
+      font-family: "Tinos", serif;
+
+      width: 35%;
+      @include sm() {
+        display: none;
+      }
+    }
+
+    p {
+      width: 65%;
+      color: black;
+      @include sm() {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
