@@ -4,13 +4,13 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 020vw;
+  padding: 10vh 20vw;
 
   @include md() {
     padding: 0 pixRem(72);
   }
   @include sm() {
-    padding: 0 pixRem(18);
+    padding: 10vh pixRem(20);
     flex-direction: column;
     row-gap: pixRem(100);
   }
@@ -23,6 +23,7 @@
     @include sm() {
       width: 100%;
       row-gap: pixRem(40);
+      align-items: center;
     }
 
     .all_skills_container {
@@ -44,6 +45,7 @@
     @include sm() {
       width: 100%;
       row-gap: pixRem(40);
+      align-items: center;
     }
 
     .all_experience_container {

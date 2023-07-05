@@ -1,7 +1,14 @@
 import styles from "./HomePage.module.scss";
-import AnimatedFadeInPage from "../../utils/AnimatedFadeInPage";
+import { AnimatedFadeInPage } from "../../utils";
 import useApp from "../../hooks/useApp";
-import { Hero, About, Contact, Projects, Skills } from "./Components";
+import {
+  Hero,
+  About,
+  Contact,
+  Projects,
+  Skills,
+  WallOfLove,
+} from "./Components";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import routePaths from "../../utils/routePaths";
@@ -27,7 +34,7 @@ const HomePage = () => {
     ) {
       aboutSectionRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     } else if (
       window.location.hash === routePaths.PROJECTS &&
@@ -35,7 +42,7 @@ const HomePage = () => {
     ) {
       projectsSectionRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     } else if (
       window.location.hash === routePaths.SKILLS &&
@@ -73,6 +80,9 @@ const HomePage = () => {
         </div>
         <div ref={skillsSectionRef}>
           <Skills />
+        </div>
+        <div>
+          <WallOfLove />
         </div>
         <div ref={contactSectionRef}>
           <Contact />
