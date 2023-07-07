@@ -66,10 +66,23 @@
 
     p {
       width: 65%;
-      color: black;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
       @include sm() {
         width: 100%;
         text-align: center;
+      }
+      span {
+        width: 100%;
+        color: rgba(0, 0, 0, 0.515);
+        line-height: 150%;
+
+        span {
+          color: $extended;
+          font-weight: 600;
+        }
       }
     }
   }
