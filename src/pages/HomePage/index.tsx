@@ -50,7 +50,7 @@ const HomePage = () => {
     ) {
       skillsSectionRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     } else if (
       window.location.hash === routePaths.CONTACT &&

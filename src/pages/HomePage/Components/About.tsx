@@ -15,51 +15,39 @@ const About = () => {
           I code awesome and functional website with a keen eye for detail and
           execution.
         </h4>
+
         <p>
-          Certainly! Here's a model answer to the question "What would we be
-          missing out on if we don't pick you for this UI/UX role?" "By choosing
-          me for this UI/UX role, you would be gaining a highly skilled and
-          dedicated professional who can contribute significantly to your
-          projects. Here's what you would be missing out on if you don't pick
-          me: Extensive Expertise: With years of experience in UI/UX design, I
-          bring a deep understanding of design principles, user-centered design
-          methodologies, and industry best practices. My expertise extends to
-          wireframing, prototyping, and using tools such as Sketch, Figma, and
-          Adobe Creative Suite. This expertise allows me to create visually
-          appealing and intuitive interfaces that enhance the overall user
-          experience. Creative Problem-Solving: I thrive on finding innovative
-          solutions to design challenges. My creative thinking and ability to
-          approach problems from different angles help me to deliver unique and
-          engaging designs. I have a track record of creating interfaces that
-          effectively communicate complex concepts while maintaining a seamless
-          and intuitive user flow. User-Centric Approach: I strongly believe in
-          the power of empathy in design. I invest time in understanding user
-          needs, conducting user research, and gathering insights to inform my
-          design decisions. By incorporating user feedback throughout the design
-          process, I ensure that the end product resonates with and delights the
-          target audience. Collaborative Skills: Effective collaboration is
-          crucial in successful design projects. I have experience working
-          closely with developers, product managers, and stakeholders, fostering
-          open communication and productive working relationships. My strong
-          interpersonal skills enable me to communicate design concepts
-          effectively and incorporate feedback constructively, resulting in
-          cohesive and impactful designs. Meticulous Attention to Detail: I
-          pride myself on my keen eye for detail. I pay close attention to
-          typography, color theory, and maintaining consistency across the
-          design system. By upholding high design standards and ensuring
-          pixel-perfect precision, I create polished and visually cohesive user
-          interfaces. Adaptability and Growth Mindset: The UI/UX field is
-          dynamic, with new technologies and trends emerging constantly. I
-          embrace this ever-changing landscape and am committed to continuous
-          learning and growth. My adaptability allows me to quickly grasp new
-          tools, techniques, and industry trends, ensuring that I stay ahead of
-          the curve and bring the latest design practices to your projects.
-          Passion and Enthusiasm: UI/UX design is not just a job for me; it's my
-          true passion. I am genuinely enthusiastic about creating exceptional
-          user experiences that leave a lasting impact. This enthusiasm drives
-          me to go the extra mile, to stay updated with the latest design
-          trends, and to constantly seek out new ways to elevate the user
-          experience.
+          <span>
+            {" "}
+            I'll be the first to say that web development is truly daunting.
+            Developing a product that would meet the intricate needs of
+            different users is quite the challenge. But this is what I do and I
+            enjoy it. The perfect product might not exist, but be rest assured
+            that I will get you something extremely close to perfection.{" "}
+            <span>Hi, I am Oghenetega, a fullstack developer.</span> With years
+            of experience in architecture and design from school and work, I
+            have mastered the skills of understanding client requirements as
+            well as users' pain points.
+          </span>
+          <span>
+            {" "}
+            I've spent the last few years working across different technologies
+            in Frontend and Backend such as react, nextJs, typescript, sass,
+            redux, etc. I have also worked on various projects with different
+            team sizes and this has enhanced my communication skills as well as
+            my teamwork. With me, you would be getting a team mate willing to
+            learn and grow with the teamm as well as a consistent pair of hands
+            willing to see the project to completion.
+          </span>
+          <span>
+            {" "}
+            I really believe mindfulness in the workplace is key to success—a
+            tenet I live out through my interests in football, chess,
+            table-tennis, and basketball. I also love puzzles and anything that
+            has to do with history and science. I am currently working as a
+            freelance web developer and I am always interested in a challenge.
+            Reach out to arcteggzz@gmail.com to connect!
+          </span>
         </p>
       </div>
     </section>
