@@ -9,6 +9,7 @@ import { PublicPageLayout } from "./utils/";
 
 //pages
 import { SplashPage, HomePage } from "./pages";
+import DashboardPage from "./pages/DashboardPage";
 
 //routes
 import { routePaths } from "./utils/";
@@ -22,6 +23,7 @@ const App = () => {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path={routePaths.SPLASHPAGE} element={<SplashPage />} />
+            <Route path={"/dashboard"} element={<DashboardPage />} />
 
             <Route element={<PublicPageLayout />}>
               <Route path={routePaths.HOMEPAGE} element={<HomePage />} />

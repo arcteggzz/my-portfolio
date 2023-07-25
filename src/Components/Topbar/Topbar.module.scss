@@ -1,0 +1,110 @@
+@use "../../assets/styles/" as *;
+
+.Topbar {
+  width: calc(100% - 220px);
+  // height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 28px;
+  height: 46px;
+  background-color: $brand_color_light;
+  border-bottom: 1px solid #f1f1f1;
+  height: 48px;
+  position: fixed;
+
+  .item_container {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+
+    .checkbox_input_container {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+
+      p {
+        color: #6b7092;
+        font-family: "Red Hat Display", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .slider_container {
+        width: 48px;
+        height: 28px;
+        border: 2px solid $brand_color_dark;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        position: relative;
+
+        .input_indicator {
+          width: 20px;
+          height: 20px;
+          background-color: $brand_color_dark;
+          border-radius: 4px;
+          position: absolute;
+          top: 2px;
+          // left: 2px;
+          border: 0;
+          transition: all ease 0.5s;
+        }
+      }
+    }
+
+    .notifications_container {
+      position: relative;
+      cursor: pointer;
+
+      .notification_icon {
+        padding: 4px;
+        border-radius: 50%;
+        background-color: $neutral_scepter;
+        cursor: pointer;
+        border: none;
+      }
+
+      .notification_counter {
+        position: absolute;
+        top: 0;
+        right: -8px;
+
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        color: #ffffff;
+        background-color: $brand_color_somber;
+        font-size: 7px;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+
+    .profile_container {
+      display: flex;
+      background-color: $neutral_scepter;
+      padding: 2px;
+      border-radius: 8px;
+
+      .profile_image {
+        padding: 6px 8px;
+        border: 2px solid $brand_color_dark;
+        border-radius: 8px;
+      }
+
+      .dropdown_icon {
+        padding: 8px;
+        cursor: pointer;
+        // transform: rotate(180deg);
+        transition: all ease 0.5s;
+      }
+    }
+  }
+}

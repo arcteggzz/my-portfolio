@@ -1,0 +1,22 @@
+@use "../../assets/styles/" as *;
+
+.DashboardPage {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+.right {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(120vh - 48px);
+  margin-top: 48px;
+}
