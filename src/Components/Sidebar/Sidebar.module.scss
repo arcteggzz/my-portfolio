@@ -10,11 +10,12 @@
   font-family: "Red Hat Display", sans-serif;
   background-color: $brand_color_light;
   position: fixed;
-  overflow-y: auto;
+  overflow-y: hidden;
 
   .top_sidebar {
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 
     .logo_container {
       display: flex;
@@ -59,20 +60,26 @@
       }
     }
 
-    .nav_container {
+    .scrollable_container {
       display: flex;
       flex-direction: column;
-      row-gap: 8px;
-      width: 100%;
-      padding: 16px 0 8px 0;
-      border-bottom: 1px solid $brand_color_neutral;
-    }
+      overflow-y: scroll;
 
-    .accordion_container {
-      display: flex;
-      flex-direction: column;
-      row-gap: 8px;
-      padding: 16px 0;
+      .nav_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+        padding: 16px 0 8px 0;
+        border-bottom: 1px solid $brand_color_neutral;
+      }
+
+      .accordion_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        padding: 16px 0;
+      }
     }
   }
 
@@ -80,7 +87,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    padding: 0 16px 20px 16px;
+    padding: 20px 16px;
 
     .upgrade_container {
       display: flex;
@@ -155,15 +162,15 @@
 }
 
 /* Style the scrollable content and enable scrolling */
-.Sidebar::-webkit-scrollbar {
+.scrollable_container::-webkit-scrollbar {
   width: 0em; /* Set scrollbar width as per your preference */
 }
 
-.Sidebar::-webkit-scrollbar-track {
+.scrollable_container::-webkit-scrollbar-track {
   background-color: transparent; /* Hide the scrollbar track */
 }
 
-.Sidebar::-webkit-scrollbar-thumb {
+.scrollable_container::-webkit-scrollbar-thumb {
   background-color: transparent; /* Customize the scrollbar thumb color */
 }
 

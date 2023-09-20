@@ -8,10 +8,10 @@ import courses_logo from "./images/courses.png";
 import { useState } from "react";
 import dropdown_icon_open from "./images/dropdown_icon_open.png";
 import dropdown_icon_closed from "./images/dropdown_icon_closed.png";
-import {
-  brand_color_dark,
-  brand_color_dim,
-} from "../../assets/styles/tribe_colors.module.scss";
+// import {
+//   brand_color_dark,
+//   brand_color_dim,
+// } from "../../assets/styles/tribe_colors.module.scss";
 
 interface SingleNavigationType {
   link_title: string;
@@ -51,9 +51,9 @@ const SingleAccordion = ({
   const [accordionOptionsOpen, setAccordionOptionsOpen] = useState(false);
   const accordion_header_style = {
     borderRight: accordionOptionsOpen
-      ? `4px solid ${brand_color_dark}`
+      ? `4px solid #020e58`
       : `4px solid transparent`,
-    backgroundColor: accordionOptionsOpen ? brand_color_dim : "",
+    backgroundColor: accordionOptionsOpen ? "#edf1ff" : "",
   };
   const accordion_title_style = {
     fontWeight: accordionOptionsOpen ? "700" : "400",
@@ -141,50 +141,52 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className={styles.nav_container}>
-            {first_links.map((item) => {
-              return (
-                <SingleNavigation
-                  key={item.link_name}
-                  image_src={item.image}
-                  link_name={item.link_name}
-                  alt_text={item.alt_text}
-                  link_title={item.link_title}
-                />
-              );
-            })}
-          </div>
+          <div className={styles.scrollable_container}>
+            <div className={styles.nav_container}>
+              {first_links.map((item) => {
+                return (
+                  <SingleNavigation
+                    key={item.link_name}
+                    image_src={item.image}
+                    link_name={item.link_name}
+                    alt_text={item.alt_text}
+                    link_title={item.link_title}
+                  />
+                );
+              })}
+            </div>
 
-          <div className={styles.nav_container}>
-            {second_links.map((item) => {
-              return (
-                <SingleNavigation
-                  key={item.link_name}
-                  image_src={item.image}
-                  link_name={item.link_name}
-                  alt_text={item.alt_text}
-                  link_title={item.link_title}
-                />
-              );
-            })}
-          </div>
+            <div className={styles.nav_container}>
+              {second_links.map((item) => {
+                return (
+                  <SingleNavigation
+                    key={item.link_name}
+                    image_src={item.image}
+                    link_name={item.link_name}
+                    alt_text={item.alt_text}
+                    link_title={item.link_title}
+                  />
+                );
+              })}
+            </div>
 
-          <div className={styles.accordion_container}>
-            <SingleAccordion
-              accordionHeaderTitle="Workspaces"
-              accordionOptionsList={[
-                { link: "#", title: "# tribesquare" },
-                { link: "#", title: "# worksquare" },
-              ]}
-            />
-            <SingleAccordion
-              accordionHeaderTitle="Messages"
-              accordionOptionsList={[
-                { link: "#", title: "Oghenetega" },
-                { link: "#", title: "Kelechi" },
-                { link: "#", title: "Godswill" },
-              ]}
-            />
+            <div className={styles.accordion_container}>
+              <SingleAccordion
+                accordionHeaderTitle="Workspaces"
+                accordionOptionsList={[
+                  { link: "#", title: "# tribesquare" },
+                  { link: "#", title: "# worksquare" },
+                ]}
+              />
+              <SingleAccordion
+                accordionHeaderTitle="Messages"
+                accordionOptionsList={[
+                  { link: "#", title: "Oghenetega" },
+                  { link: "#", title: "Kelechi" },
+                  { link: "#", title: "Godswill" },
+                ]}
+              />
+            </div>
           </div>
         </div>
 
