@@ -9,6 +9,7 @@ import braingamesBackground from "../images/project_braingames.png";
 import phoenixBackground from "../images/project_phoenix.png";
 import tribeSquareBackground from "../images/project_tribesquare.jpg";
 import slsBackground from "../images/project_sls.jpg";
+import astroCoiffeurBackground from "../images/project_astro_coiffeurs.jpg";
 
 type SinglePortfolioProjectProps = {
   projectTitle: string;
@@ -64,6 +65,7 @@ const SinglePortfolioProject = ({
 
 const Projects = () => {
   const backgroundImages = [
+    astroCoiffeurBackground,
     eliteHomeBackground,
     slsBackground,
     phoenixBackground,
