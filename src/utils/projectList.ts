@@ -1,5 +1,13 @@
 const projectList = [
   {
+    projectTitle: "Astro-Coiffeurs Website",
+    projectDescription:
+      "Functional website for Unisex Hair Salon, allow customers to book and see details of possible appointment dates. An Astro template project.",
+    projectId: "9897-ip0076-astro-coiffeur.vercel.app/",
+    projectLiveLink: "https://astro-coiffeur.vercel.app/",
+    projectGithubLink: "https://github.com/arcteggzz/astro-coiffeur",
+  },
+  {
     projectTitle: "Elite Homes Application",
     projectDescription:
       "Signup, Login and explore our website for purchase of your real estate properties, for sale or for rent.",
