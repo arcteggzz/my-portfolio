@@ -36,7 +36,7 @@ const About = () => {
             redux, etc. I have also worked on various projects with different
             team sizes and this has enhanced my communication skills as well as
             my teamwork. With me, you would be getting a team mate willing to
-            learn and grow with the teamm as well as a consistent pair of hands
+            learn and grow with the team as well as a consistent pair of hands
             willing to see the project to completion.
           </span>
           <span>
