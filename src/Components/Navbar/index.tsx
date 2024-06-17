@@ -12,7 +12,7 @@ import oghenetega_logo_dark from "../../assets/images/oghenetega_logo_black.png"
 const Navbar = () => {
   const { mobileNavbarOpen, toggleMobileNavbar } = useApp();
   const [navBarActive, setNavbarActive] = useState(false);
-  const cvLink = `https://drive.google.com/file/d/14qAuJ2sh7En_QZPcXwLbMxfYObGVvbhs/view?usp=sharing`;
+  const cvLink = `https://drive.google.com/file/d/1_Hqta1kPjIdjRv3Zp50ZhQRSz0qpE2LR/view?usp=sharing`;
   const navElements = [
     { link: routePaths.HOME, name: "Home" },
     { link: routePaths.ABOUT, name: "About" },
