@@ -4,7 +4,7 @@ const experienceList = [
     companyName: "Sterling Bank Holdings",
     position: "Software Engineer",
     description:
-      "Currently, I work as a software Engineer on teh Entrepreneur in Residence team, building innovative solutions. ",
+      "Currently, I work as a software Engineer on the Entrepreneur in Residence team, building innovative solutions. Also assistant lead for the growth hacking team. ",
   },
   {
     date: "2023 - 2024.",
