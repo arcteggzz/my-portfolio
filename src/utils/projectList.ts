@@ -1,11 +1,27 @@
 const projectList = [
   {
-    projectTitle: "Astro-Coiffeurs Website",
+    projectTitle: "Fusion Social Media App",
     projectDescription:
-      "Functional website for Unisex Hair Salon, allow customers to book and see details of possible appointment dates. An Astro template project.",
-    projectId: "9897-ip0076-astro-coiffeur.vercel.app/",
-    projectLiveLink: "https://astro-coiffeur.vercel.app/",
-    projectGithubLink: "https://github.com/arcteggzz/astro-coiffeur",
+      "Join us to improve life through community by fostering a vibrant ecosystem that promotes innovative financial and social lifestyle solutions.",
+    projectId: "9897-ip0109-oghenetega-fusion-social-media",
+    projectLiveLink: "https://fusion.ng",
+    projectGithubLink: null,
+  },
+  {
+    projectTitle: "Edpay V2",
+    projectDescription:
+      "School fees financing for children powered by internally generated servicing. Based on earning power of wards guardian.",
+    projectId: "9897-ip0110-oghenetega-edpay-v2",
+    projectLiveLink: "https://edupay-frontend-prod.azurewebsites.net/welcome",
+    projectGithubLink: null,
+  },
+  {
+    projectTitle: "PayFlex",
+    projectDescription:
+      "Teacher salary, teaacher financing and upfront payment solution. Offering Loans based on salary earned",
+    projectId: "9897-ip0111-oghenetega-payflex",
+    projectLiveLink: "https://payflex.edubanc.ng",
+    projectGithubLink: null,
   },
   {
     projectTitle: "Elite Homes Application",
@@ -56,6 +72,14 @@ const projectList = [
     projectLiveLink:
       "https://esedere-oghenetega-tribesquare-tskmng.netlify.app/",
     projectGithubLink: "https://github.com/arcteggzz/tribeSquare-task-manager",
+  },
+  {
+    projectTitle: "Astro-Coiffeurs Website",
+    projectDescription:
+      "Functional website for Unisex Hair Salon, allow customers to book and see details of possible appointment dates. An Astro template project.",
+    projectId: "9897-ip0076-astro-coiffeur.vercel.app/",
+    projectLiveLink: "https://astro-coiffeur.vercel.app/",
+    projectGithubLink: "https://github.com/arcteggzz/astro-coiffeur",
   },
   // {
   //   projectTitle: "Phoenix",
