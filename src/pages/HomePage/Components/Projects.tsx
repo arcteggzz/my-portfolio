@@ -10,13 +10,16 @@ import phoenixBackground from "../images/project_phoenix.png";
 import tribeSquareBackground from "../images/project_tribesquare.jpg";
 import slsBackground from "../images/project_sls.jpg";
 import astroCoiffeurBackground from "../images/project_astro_coiffeurs.jpg";
+import payflexBackground from "../images/project_payflex.png";
+import edpayBackground from "../images/project_edpay.png";
+import fusionBackground from "../images/project_fusion.png";
 
 type SinglePortfolioProjectProps = {
   projectTitle: string;
   projectDescription: string;
   // projectId: string;
   projectLiveLink: string;
-  projectGithubLink: string;
+  projectGithubLink: string | null;
   backgroundImage: string;
 };
 
@@ -40,14 +43,17 @@ const SinglePortfolioProject = ({
         <h3>{projectTitle}</h3>
         <p>{projectDescription}</p>
         <div className={styles.links_container}>
-          <Link
-            to={`${projectGithubLink}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.view_more_btn}
-          >
-            Github link
-          </Link>
+          {projectGithubLink && (
+            <Link
+              to={`${projectGithubLink}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.view_more_btn}
+            >
+              Github link
+            </Link>
+          )}
+
           <Link
             to={`${projectLiveLink}`}
             className={styles.live_site_btn}
@@ -65,13 +71,16 @@ const SinglePortfolioProject = ({
 
 const Projects = () => {
   const backgroundImages = [
-    astroCoiffeurBackground,
+    fusionBackground,
+    edpayBackground,
+    payflexBackground,
     eliteHomeBackground,
     slsBackground,
     phoenixBackground,
     lendsqrBackground,
     braingamesBackground,
     tribeSquareBackground,
+    astroCoiffeurBackground,
   ];
 
   return (
