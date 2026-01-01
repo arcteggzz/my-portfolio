@@ -21,7 +21,7 @@ const Hero = () => {
         className={styles.portrait_image}
       />
       <h1>Oghenetega Esedere</h1>
-      <h4>Fullstack Web Developer</h4>
+      <h4>CTO & Engineering Manager — Building Reliable, Scalable Products</h4>
       <div className={styles.blinds_cover}></div>
 
       <div className={styles.mouse_scroll_container}>

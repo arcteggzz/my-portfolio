@@ -6,47 +6,42 @@ const About = () => {
       <div className={styles.about_header}>
         <h4>about me</h4>
         <h2>
-          I am a growing fullstack web developer with two years experience in
-          Frontend development.
+          I am a technology leader with hands-on experience building,
+          stabilizing, and scaling production systems.
         </h2>
       </div>
       <div className={styles.about_body}>
         <h4>
-          I code awesome and functional website with a keen eye for detail and
-          execution.
+          I have led engineering efforts across backend, frontend,
+          infrastructure, and operations, working closely with product, sales,
+          and operations teams to deliver reliable platforms in high-pressure
+          environments.
         </h4>
 
         <p>
           <span>
             {" "}
-            I'll be the first to say that web development is truly daunting.
-            Developing a product that would meet the intricate needs of
-            different users is quite the challenge. But this is what I do and I
-            enjoy it. The perfect product might not exist, but be rest assured
-            that I will get you something extremely close to perfection.{" "}
-            <span>Hi, I am Oghenetega, a fullstack developer.</span> With years
-            of experience in architecture and design from school and work, I
-            have mastered the skills of understanding client requirements as
-            well as users' pain points.
+            Over the past years, I have overseen major infrastructure
+            migrations, production system stabilization, and the delivery of
+            critical financial features. I have taken ownership of legacy
+            systems, identified structural flaws, and led efforts to correct
+            them — significantly improving system reliability, uptime, and
+            operational confidence.
           </span>
           <span>
             {" "}
-            I've spent the last few years working across different technologies
-            in Frontend and Backend such as react, nextJs, typescript, sass,
-            redux, etc. I have also worked on various projects with different
-            team sizes and this has enhanced my communication skills as well as
-            my teamwork. With me, you would be getting a team mate willing to
-            learn and grow with the team as well as a consistent pair of hands
-            willing to see the project to completion.
+            I remain hands-on when necessary, contributing to critical features,
+            architectural decisions, and complex problem areas across frontend
+            and backend systems.
           </span>
           <span>
             {" "}
             I really believe mindfulness in the workplace is key to success—a
-            tenet I live out through my interests in football, chess,
-            table-tennis, and basketball. I also love puzzles and anything that
-            has to do with history and science. I am currently working as a
-            freelance web developer and I am always interested in a challenge.
-            Reach out to arcteggzz@gmail.com to connect!
+            tenet I live out through my other interests in football and chess. I
+            also love puzzles and anything that has to do with history and
+            science. I am currently working as a technical leader and I am
+            always interested in a challenge. Reach out to
+            career.oghenetega@outlook.com to connect!
           </span>
         </p>
       </div>
